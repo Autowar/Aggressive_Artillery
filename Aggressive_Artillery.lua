@@ -302,4 +302,11 @@ function widget:Update()
 	end
 end
 
+function widget:UnitDestroyed(unitID, unitDefID, unitTeam)
+local factoryname=GetUnitName(unitID)
+	if factoryploplist[factoryname]==true and unitTeam==myTeamID then
+		x1=0
+	end
+end
+
 -----------------------------------------------------------------
